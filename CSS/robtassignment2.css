@@ -1,0 +1,741 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --background-and-tex-color-one: #ffffff;
+  --background-and-text-color-two: #000000;
+  --background-color-one: #bda9b1;
+  --background-color-two: #97909017;
+  --text-color-one: #834496;
+  --text-color-two: #55f9fc;
+  --text-color-three: #fbe900;
+  --text-color-four: #e2c0ec;
+  --text-color-five: #111111;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--background-color-two);
+  justify-content: space-between;
+  display: flex;
+  height: 60px;
+}
+.navbar img {
+  justify-content: left;
+  margin-left: 10px;
+}
+.align {
+  display: none;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+.navbar a {
+  color: var(--text-color-five);
+  text-decoration: none;
+  /* margin: 10px; */
+}
+.navbar li {
+  margin: 15px;
+  display: inline-block;
+}
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.two {
+  height: 130vh;
+  /* background-color: goldenrod; */
+  background-image: url(../robotimages2/robotgradientintro2.jpg.jpg);
+  background-position: 85%;
+  background-repeat: no-repeat;
+}
+.circlegradient2 {
+  width: 100%;
+  position: absolute;
+}
+.circlegradient2 img {
+  position: absolute;
+  top: 120px;
+  left: 105px;
+  width: 180px;
+  height: 180px;
+}
+.two h1 {
+  position: absolute;
+  width: 40%;
+  top: 240px;
+  left: 170px;
+  color: white;
+  font-weight: 700;
+  font-size: 90px;
+  z-index: 22;
+}
+.two p {
+  position: absolute;
+  top: 470px;
+  left: 170px;
+  color: white;
+  font-weight: 700;
+  width: 40%;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-size: 20px;
+}
+.circlegradients2 {
+  position: relative;
+}
+.circlegradients2 img {
+  position: absolute;
+  top: 80px;
+  right: 180px;
+  width: 150px;
+  height: 150px;
+  z-index: 22;
+}
+
+/* SECOND SECTION WITH THE CLASS NAME "tech-news" */
+.tech-news {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* height: 100vh; */
+  /* left: 150px; */
+}
+.tn {
+  position: absolute;
+  top: 70px;
+  width: 70%;
+  left: 150px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.tech-news h1 {
+  position: absolute;
+  top: 100px;
+  width: 70%;
+  left: 150px;
+  font-size: 80px;
+}
+.in-human {
+  position: absolute;
+  top: 200px;
+  width: 40%;
+  left: 150px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.tech-news a {
+  position: absolute;
+  top: 400px;
+  left: 150px;
+  text-decoration: none;
+  color: var(--text-color-one);
+  outline: 2px solid var(--text-color-two);
+}
+.tech-news a:hover {
+  background-color: var(--text-color-two);
+}
+.bubble2 {
+  position: relative;
+}
+.bubble2 img {
+  position: absolute;
+  right: 0;
+  top: -170px;
+  width: 445px;
+  height: 580px;
+}
+
+.color1 {
+  position: relative;
+  height: 160vh;
+  background-image: url(../robotimages2/color1.jpg);
+  background-position: 85%;
+}
+.robot2 {
+  position: relative;
+}
+.robot2 img {
+  position: absolute;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  right: 200px;
+  bottom: -230px;
+}
+.bubbles {
+  position: relative;
+}
+.bubbles img {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top: -100px;
+  left: -70px;
+}
+.linepics {
+  position: relative;
+  top: 350px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  left: 5%;
+}
+.robot3 {
+  position: relative;
+  width: 22.5%;
+}
+.robot3 img {
+  position: absolute;
+  top: 200px;
+  height: 300px;
+  width: 100%;
+}
+.rocket {
+  position: relative;
+  width: 22.5%;
+}
+.rocket img {
+  position: absolute;
+  height: 550px;
+  width: 100%;
+}
+
+.car2 {
+  position: relative;
+  width: 22.5%;
+}
+.car2 img {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 150px;
+}
+.hand2 {
+  position: relative;
+  width: 22.5%;
+}
+.hand2 img {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 50px;
+}
+.maximum-flex {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  width: 40%;
+  color: white;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+  body {
+    /* background-color: rgb(151, 142, 11); */
+  }
+  .navbar {
+    width: 100%;
+    background-color: var(--background-color-two);
+  }
+  .logo {
+    width: 70%;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-self: center;
+  }
+  .logo img {
+    left: 0px;
+    display: flex;
+  }
+  .navbar li {
+    display: none;
+  }
+
+  .navbar .align {
+    display: block;
+    background-color: #02fff2;
+    margin-top: 30px;
+    display: inline;
+  }
+
+  .main {
+    position: relative;
+  }
+  .two {
+    height: 90vh;
+    background-position: 70%;
+    background-repeat: no-repeat;
+    /* background-size: 1200px; */
+    background-size: cover;
+  }
+  .circlegradient2 img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 120px;
+  }
+  .two h1 {
+    position: absolute;
+    top: 160px;
+    width: 80%;
+    left: 55px;
+    font-size: 50px;
+  }
+  .two p {
+    position: absolute;
+    left: 55px;
+    top: 300px;
+    width: 80%;
+    /* font-size: 35px; */
+    line-height: 30px;
+    font-weight: 500;
+  }
+  .tech-news {
+    height: 170vh;
+    width: 100%;
+    position: relative;
+    /* height: 100vh; */
+    /* left: 150px; */
+  }
+  .tn {
+    position: absolute;
+    top: 380px;
+    left: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .tech-news h1 {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    left: 20px;
+    font-size: 60px;
+  }
+  .in-human {
+    position: absolute;
+    width: 80%;
+    top: 520px;
+    left: 25px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+  .tech-news a {
+    position: absolute;
+    top: 1000px;
+    left: 25px;
+    text-decoration: none;
+    color: var(--text-color-one);
+    outline: 2px solid var(--text-color-two);
+  }
+  .tech-news a:hover {
+    background-color: var(--text-color-two);
+  }
+  .bubble2 {
+    position: relative;
+  }
+  .bubble2 img {
+    position: absolute;
+    right: 0;
+    top: -110px;
+    width: 445px;
+    height: 580px;
+    right: -100px;
+  }
+
+  .color1 {
+    position: relative;
+    height: 420vh;
+    background-image: url(../robotimages2/color1.jpg);
+    background-position: 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .robot2 {
+    position: relative;
+  }
+  .robot2 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    right: 30px;
+    bottom: -200px;
+    z-index: 2;
+  }
+  .bubbles {
+    position: relative;
+  }
+  .bubbles img {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: -100px;
+    left: -210px;
+  }
+
+  .circlegradients2 {
+    position: relative;
+  }
+  .circlegradients2 img {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    z-index: 22;
+  }
+
+  .linepics {
+    position: relative;
+    top: -150px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    left: 5%;
+    align-items: center;
+  }
+  .robot3 {
+    position: relative;
+    width: 90%;
+    top: 300px;
+  }
+  .robot3 img {
+    position: absolute;
+    /* top: 500px; */
+    height: 550px;
+    width: 100%;
+  }
+  .rocket {
+    position: relative;
+    top: 1000px;
+    width: 90%;
+  }
+  .rocket img {
+    position: absolute;
+    /* height: 550px; */
+    width: 100%;
+    top: 130px;
+  }
+
+  .car2 {
+    position: relative;
+    top: 1200px;
+    width: 90%;
+    top: 1300px;
+  }
+  .car2 img {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 500px;
+  }
+  .hand2 {
+    position: relative;
+    top: 1700px;
+    width: 90%;
+  }
+  .hand2 img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 600px;
+  }
+  .maximum-flex {
+    position: absolute;
+    bottom: 170px;
+    width: 80%;
+    color: white;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 701px) {
+  body {
+    /* background-color: #fd7301; */
+  }
+  .navbar {
+    display: block;
+    height: 100px;
+  }
+  .main {
+    position: relative;
+  }
+  .two {
+    position: relative;
+    height: 130vh;
+    /* position: relative; */
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+  }
+
+  .circlegradient2 img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50px;
+    top: 100px;
+  }
+
+  .two h1 {
+    position: absolute;
+    top: 180px;
+    width: 70%;
+    left: 70px;
+    font-size: 100px;
+  }
+  .two p {
+    position: absolute;
+    left: 70px;
+    top: 400px;
+    width: 60%;
+    /* font-size: 35px; */
+    line-height: 30px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: var(--background-and-tex-color-one);
+  }
+  .navbar {
+    width: 100%;
+    background-color: var(--background-color-two);
+    justify-content: space-between;
+    display: flex;
+    height: 60px;
+  }
+  .navbar img {
+    justify-content: left;
+    margin-left: 10px;
+  }
+  .align {
+    display: none;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+  }
+  .navbar a {
+    color: var(--text-color-five);
+    text-decoration: none;
+    /* margin: 10px; */
+  }
+  .navbar li {
+    margin: 15px;
+    display: inline-block;
+  }
+  .main {
+    position: relative;
+    width: 100%;
+  }
+
+  .two {
+    height: 130vh;
+    /* background-color: goldenrod; */
+    background-image: url(../robotimages2/robotgradientintro2.jpg.jpg);
+    background-position: 85%;
+    background-repeat: no-repeat;
+  }
+  .circlegradient2 {
+    width: 100%;
+    position: absolute;
+  }
+  .circlegradient2 img {
+    position: absolute;
+    top: 120px;
+    left: 105px;
+    width: 180px;
+    height: 180px;
+  }
+  .two h1 {
+    position: absolute;
+    width: 40%;
+    top: 240px;
+    left: 170px;
+    color: white;
+    font-weight: 700;
+    font-size: 90px;
+    z-index: 22;
+  }
+  .two p {
+    position: absolute;
+    top: 470px;
+    left: 170px;
+    color: white;
+    font-weight: 700;
+    width: 40%;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .circlegradients2 {
+    position: relative;
+  }
+  .circlegradients2 img {
+    position: absolute;
+    top: 80px;
+    right: 180px;
+    width: 150px;
+    height: 150px;
+    z-index: 22;
+  }
+
+  /* SECOND SECTION WITH THE CLASS NAME "tech-news" */
+  .tech-news {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* height: 100vh; */
+    /* left: 150px; */
+  }
+  .tn {
+    position: absolute;
+    top: 70px;
+    width: 70%;
+    left: 150px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .tech-news h1 {
+    position: absolute;
+    top: 100px;
+    width: 70%;
+    left: 150px;
+    font-size: 80px;
+  }
+  .in-human {
+    position: absolute;
+    top: 200px;
+    width: 40%;
+    left: 150px;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+  .tech-news a {
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    text-decoration: none;
+    color: var(--text-color-one);
+    outline: 2px solid var(--text-color-two);
+  }
+  .tech-news a:hover {
+    background-color: var(--text-color-two);
+  }
+  .bubble2 {
+    position: relative;
+  }
+  .bubble2 img {
+    position: absolute;
+    right: 0;
+    top: -170px;
+    width: 445px;
+    height: 580px;
+  }
+
+  .color1 {
+    position: relative;
+    height: 160vh;
+    background-image: url(../robotimages2/color1.jpg);
+    background-position: 85%;
+  }
+  .robot2 {
+    position: relative;
+  }
+  .robot2 img {
+    position: absolute;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    right: 200px;
+    bottom: -230px;
+  }
+  .bubbles {
+    position: relative;
+  }
+  .bubbles img {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: -100px;
+    left: -70px;
+  }
+  .linepics {
+    position: relative;
+    top: 350px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    left: 5%;
+  }
+  .robot3 {
+    position: relative;
+    width: 22.5%;
+  }
+  .robot3 img {
+    position: absolute;
+    top: 200px;
+    height: 300px;
+    width: 100%;
+  }
+  .rocket {
+    position: relative;
+    width: 22.5%;
+  }
+  .rocket img {
+    position: absolute;
+    height: 550px;
+    width: 100%;
+  }
+
+  .car2 {
+    position: relative;
+    width: 22.5%;
+  }
+  .car2 img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 150px;
+  }
+  .hand2 {
+    position: relative;
+    width: 22.5%;
+  }
+  .hand2 img {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 50px;
+  }
+  .maximum-flex {
+    position: absolute;
+    bottom: 120px;
+    right: 50px;
+    width: 40%;
+    color: white;
+    line-height: 25px;
+    font-size: 20px;
+  }
+}
